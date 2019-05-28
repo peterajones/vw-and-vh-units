@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)http://www.quirksmode.org/css/units-values/viewport_small.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>CSS tests - The vw and vh units</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="./viewport.js"></script>
+    <style type="text/css">
+      div.test {
+        border: 1px solid;
+        margin: 10px 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      div.vw {
+        width: 50vw;
+      }
+
+      div.vh {
+        width: 50vh;
+      }
+
+      div.vmin {
+        width: 50vmin;
+      }
+
+      div.vmax {
+        width: 50vmax;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="wrapper">
+        <h2>The vw and vh units</h2>
+
+        <div id="header"></div>
+
+        <p class="intro">
+          These units allow you to specify sizes in terms of percentages of the viewport width and viewport height. See
+          also the
+          <a href="http://www.quirksmode.org/css/units-values/viewport.html">test page without a meta viewport</a>.
+        </p>
+
+        <p>The allowed units are:</p>
+
+        <ol>
+          <li><code>vw</code>: hundredths of the viewport width.</li>
+          <li><code>vh</code>: hundredths of the viewport height.</li>
+          <li><code>vmin</code>: hundredths of whichever is <em>smaller</em>, the viewport width or height.</li>
+          <li><code>vmax</code>: hundredths of whichever is <em>larger</em>, the viewport width or height.</li>
+        </ol>
+
+        <h3>Examples</h3>
+
+        <p>Here are some examples. <code>50vw</code> means 50% of the viewport width.</p>
+
+        <p>Don’t forget to resize your browser window to see the boxes resize automatically.</p>
+
+        <div class="test vw">Test of <code>width: 50vw</code>. Width is 721</div>
+
+        <div class="test vh">Test of <code>width: 50vh</code>. Width is 468</div>
+
+        <div class="test vmin">Test of <code>width: 50vmin</code>. Width is 468</div>
+
+        <div class="test vmax">Test of <code>width: 50vmax</code>. Width is 721</div>
+
+        <p id="layout">Layout viewport divided by 2 is 721 / 468</p>
+        <p id="visual">Visual viewport divided by 2 is 721 / 468</p>
+
+        <div id="footer">
+          <a href="http://www.quirksmode.org">Quirksmode</a>
+          <a href="http://www.quirksmode.org/sitemap.html">Sitemap</a>
+        </div>
+      </div>
+      <!-- end of wrapper -->
+    </div>
+    <!-- end of container -->
+  </body>
+</html>
